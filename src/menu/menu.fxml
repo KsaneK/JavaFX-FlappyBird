@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="menu.MenuController"
+            prefHeight="600.0" prefWidth="1000.0"
+            fx:id="root">
+    <ImageView fx:id="bg1"/>
+    <ImageView fx:id="bg2" layoutX="1600"/>
+    <VBox translateX="400" translateY=" 260" prefWidth="200" prefHeight="80" spacing="20" fx:id="btns">
+        <Button prefWidth="200" prefHeight="40" text="Start!" onMouseClicked="#startGame"
+                style="-fx-font-size: 24; -fx-background-color: LIGHTGREEN; -fx-border-color: BLACK;"/>
+        <Button prefWidth="200" prefHeight="40" text="Exit" onMouseClicked="#exit"
+                style="-fx-font-size: 24; -fx-background-color: LIGHTGREEN; -fx-border-color: BLACK;"/>
+    </VBox>
+</AnchorPane>
